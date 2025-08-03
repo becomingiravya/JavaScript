@@ -5,7 +5,7 @@
 
 // Javascript is a statically typed language or dynamically typed language?
 // JavaScript is a dynamically typed language. This means that variable types are determined at runtime,
-//  and you do not need to explicitly declare the type of a variable before using it. You can assign different types of values to a variable during its lifetime.
+//   and you do not need to explicitly declare the type of a variable before using it. You can assign different types of values to a variable during its lifetime.
 
 const score = 100
 const scorevalue = 100.3
@@ -36,11 +36,41 @@ let myObj = {
 }
 
 const myFunction = function() {
-     console.log("hello world")
+     //console.log("hello world")
 }
 
-console.log(typeof bigNumber)
-console.log(typeof outsideTemp)
-console.log(typeof myFunction)
-console.log(typeof heroes)
-console.log(typeof anotherId)
+// console.log(typeof bigNumber)
+// console.log(typeof outsideTemp)
+// console.log(typeof myFunction)
+// console.log(typeof heroes)
+// console.log(typeof anotherId)
+
+
+
+
+
+
+//////////////////////////////***************************/////////////////
+// Stack(Primitive) (copy), Heap(Non- primitive) (reference)
+
+
+let myYoutubename = "lumishka.com"  
+
+let anothername = myYoutubename
+//console.log(anothername)
+
+anothername = "chaiaurcode";
+// console.log(myYoutubename);
+// console.log(anothername);
+
+
+let userOne = {
+        email: "user@google.com",
+        upid: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "lumishka@google.com"
+
+console.log(userOne.email);
