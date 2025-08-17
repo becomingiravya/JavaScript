@@ -55,7 +55,7 @@ someArr.shift();     // shift removes an element from the front of the array
 
 const someArr2 = someArr.join(); // this converts all the elements of an array to a string
 //console.log(someArr);
-//console.log(someArr2);
+console.log(someArr2);
 console.log(typeof(someArr2));
 
 
