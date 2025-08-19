@@ -37,7 +37,7 @@ const obj3 = Object.assign({}, obj1,obj2,obj4); // what happens if you don't giv
 // console.log(obj3)
 
 const obj5 = {...obj1, ...obj2, ...obj4};
-console.log(obj5);
+//console.log(obj5);
 
 
 const users = [  // objects inside array
@@ -69,12 +69,32 @@ const users = [  // objects inside array
 
 // to access it 
 
-console.log(users[1].email)   // name then index value then dot operator
+//console.log(users[1].email)   // name then index value then dot operator
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); // array of key and value inside an array
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser));
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser)); // array of key and value inside an array
 
 
-console.log(tinderUser.hasOwnProperty('islogged'))
+//console.log(tinderUser.hasOwnProperty('islogged'))
+
+
+//*********************************************************** OBJECT DESTRUCTURING ************************************************* */
+
+const course = {
+    courseName: "js in hindi",
+    coursePrice: "999",
+    courseInstructor: "Hitesh Choudhary"
+}
+
+// course.courseInstructor                 // this kinda gets hectic to use so there is a better way
+
+
+const {courseInstructor : instr} = course // you can shorten the key value if you'd like
+console.log(instr);
+
+
+// json can be in object format with keys written as strings too or it can be in array format
+// json formatter is a website where you can format a json
+// randomuserapi is a site where you can get random api s for random users.
