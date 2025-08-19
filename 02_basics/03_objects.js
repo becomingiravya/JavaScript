@@ -73,3 +73,51 @@ console.log(typeof newObj.mySym); // this will give you an output as a string.
 
 console.log(newObj[mySym2]);
 console.log(typeof newObj[mySym2]); // this will give an output as a symbol.
+
+user.email = "lumishka@chatgpt.com";
+// Object.freeze(user) // freeze does not let you change values anymore
+user.email = "lumishka@whatever.com";
+console.log(user);
+
+
+user.greeting = function(){
+    
+    console.log("Hello js user")
+
+}
+
+console.log(user.greeting)  // this will give [Function (anonymous)] because Here you are not calling the function, just printing the value of the
+//  property greeting.
+// Since greeting is a function, JavaScript shows it as [Function (anonymous)].
+// Here, you created a function expression without giving it a name.
+// So JavaScript just calls it an anonymous function and shows [Function (anonymous)].
+
+
+console.log(user.greeting())  // Hello js user (next line ->) undefined
+// Now you’re calling the function.
+
+// Inside the function, you already wrote:
+
+// console.log("Hello js user")
+
+
+// So that line runs first and prints:
+
+// Hello js user
+
+// BUT notice your function does not have a return statement.
+// By default, a JS function returns undefined.
+
+// So after printing "Hello js user", the function returns undefined.
+// Then your outer console.log(...) logs that return value:
+// undefined
+
+
+
+user.greetingTwo = function(){
+    
+    console.log(`Hello js user ${this.name}`);  // this is a placeholder for “the object that called this function.” 
+
+}
+
+user.greetingTwo();
