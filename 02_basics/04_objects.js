@@ -74,7 +74,7 @@ const users = [  // objects inside array
 //console.log(tinderUser);
 //console.log(Object.keys(tinderUser));
 //console.log(Object.values(tinderUser));
-//console.log(Object.entries(tinderUser)); // array of key and value inside an array
+console.log(Object.entries(tinderUser)); // array of key and value inside an array
 
 
 console.log(tinderUser.hasOwnProperty('islogged'))
