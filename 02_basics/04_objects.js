@@ -77,7 +77,7 @@ const users = [  // objects inside array
 //console.log(Object.entries(tinderUser)); // array of key and value inside an array
 
 
-//console.log(tinderUser.hasOwnProperty('islogged'))
+console.log(tinderUser.hasOwnProperty('islogged'))
 
 
 //*********************************************************** OBJECT DESTRUCTURING ************************************************* */
