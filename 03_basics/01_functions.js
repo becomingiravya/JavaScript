@@ -115,7 +115,7 @@ function loginUserMessage4(username){
     }
 }
 
-//console.log(loginUserMessage4());
+console.log(loginUserMessage4());
 
 
 // ******************************************* OR GIVE A DEFAULT VALUE ************************************
