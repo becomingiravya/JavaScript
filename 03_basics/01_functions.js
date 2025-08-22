@@ -131,7 +131,7 @@ function loginUserMessage5(username = "sam"){  // here
     }
 }
 
-//console.log(loginUserMessage5());
+console.log(loginUserMessage5());
 
 
 
