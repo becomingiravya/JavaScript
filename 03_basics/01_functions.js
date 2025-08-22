@@ -83,7 +83,7 @@ function loginUserMessage2(username){
 
 // THERE WAS NOTHING.
 
-//console.log(loginUserMessage2());  // this will return "undefined just logged in."
+console.log(loginUserMessage2());  // this will return "undefined just logged in."
 
 // TO PREVENT THIS 
 
