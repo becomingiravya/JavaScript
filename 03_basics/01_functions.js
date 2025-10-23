@@ -145,7 +145,7 @@ function calculateCartPrice(num1){
 return num1;
 }
 
-//console.log(calculateCartPrice(200,399,88900));  // see here's the problem. because only one parameter has been passed into the function but more
+console.log(calculateCartPrice(200,399,88900));  // see here's the problem. because only one parameter has been passed into the function but more
 // than one argument has been given to the function it will print only the first argument and leave the rest. 
 
 // To prevent this we use the rest (...) operator. 
@@ -158,7 +158,7 @@ function calculateCartPrice2(...num1){
     return num1;
 }
 
-//console.log(calculateCartPrice2(200,500,900,99988));  // now all of these values will be passed into an array because of the rest operator.
+console.log(calculateCartPrice2(200,500,900,99988));  // now all of these values will be passed into an array because of the rest operator.
 
 
 // what if there were already more values as parameters and still there was the rest operator and the return statement was for that only.
@@ -168,7 +168,7 @@ function calculateCartPrice3(val1, val2, ...num1){
     return num1;
 }
 
-//console.log(calculateCartPrice3(400,4999,3893,222,9999)); // the first two values will go in val1 and val2 and the rest will go in num1.
+console.log(calculateCartPrice3(400,4999,3893,222,9999)); // the first two values will go in val1 and val2 and the rest will go in num1.
 // Also since the function returns num1 only, val1 and val2 will not be printed.
 
 
